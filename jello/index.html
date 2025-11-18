@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MY FAVORITE PLACE
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+                        .image-gallery {
+                            display: flex;
+                            gap: 18px;
+                            justify-content: center;
+                            margin: 24px 0 32px 0;
+                            flex-wrap: wrap;
+                        }
+                .image-gallery img {
+                            border-radius: 12px;
+                            box-shadow: 0 4px 16px rgba(60, 60, 100, 0.13);
+                            width: 210px;
+                            height: 140px;
+                            object-fit: cover;
+                            transition: transform 0.2s, box-shadow 0.2s;
+                        }
+                    max-width: 100%;
+                    height: auto;
+                }
+                                    @media (max-width: 600px) {
+                                        .container {
+                                            max-width: 98vw;
+                                            margin: 12px 1vw;
+                                            padding: 16px 6vw 18px 6vw;
+                                        }
+                                        h1 {
+                                            font-size: 1.5em;
+                                        }
+                                        h2 {
+                                            font-size: 1.1em;
+                                        }
+                                        h3 {
+                                            font-size: 1em !important;
+                                        }
+                                        h4 {
+                                            font-size: 1em;
+                                        }
+                                        p, .feature-list li {
+                                            font-size: 0.98em;
+                                        }
+                                        .image-gallery {
+                                            flex-direction: column;
+                                            gap: 12px;
+                                        }
+                                        .image-gallery img {
+                                            width: 100%;
+                                            min-width: 0;
+                                            height: auto;
+                                            max-width: 100%;
+                                        }
+                                    }
+                        .image-gallery img:hover {
+                            transform: scale(1.05);
+                            box-shadow: 0 8px 32px rgba(60, 60, 100, 0.22);
+                        }
+            body {
+                background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+                font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 700px;
+                margin: 40px auto;
+                background: rgba(255,255,255,0.85);
+                border-radius: 18px;
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+                padding: 36px 40px 32px 40px;
+            }
+            h1 {
+                letter-spacing: 2px;
+                text-shadow: 2px 2px 8px #b3c6e7;
+                margin-bottom: 10px;
+            }
+            h2 {
+                color: #3a506b;
+                margin-top: 0;
+                margin-bottom: 8px;
+            }
+            hr {
+                border: none;
+                height: 2px;
+                background: linear-gradient(90deg, #5f9ea0 0%, #b3c6e7 100%);
+                margin-bottom: 18px;
+            }
+            p {
+                border-left: 5px solid #5f9ea0;
+                padding: 16px 18px;
+                font-size: 1.1em;
+                line-height: 1.7;
+                margin-bottom: 28px;
+            }
+            h3 {
+                color: #2b6777;
+                margin-top: 30px;
+                margin-bottom: 8px;
+            }
+            h4 {
+                color: #4b4b4b;
+                margin-bottom: 12px;
+            }
+            .feature-list {
+                list-style: none;
+                padding: 0;
+                margin-bottom: 24px;
+            }
+            .feature-list li {
+                background: #eaf6fb;
+                margin-bottom: 10px;
+                padding: 10px 16px;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(95, 158, 160, 0.08);
+                display: flex;
+                align-items: center;
+                font-size: 1em;
+            }
+            /* Removed custom tree bullets */
+            .heart {
+                color: #e63946;
+                font-size: 1.3em;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 style="color: blue;">Canal Belt in Amsterdam</h1>
+            <h2>A Brief Description</h2>
+            <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Amsterdam Canal with houses and boats">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Historic bridge over Amsterdam canal">
+                <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=600&q=80" alt="Evening view of Amsterdam canal belt">
+            </div>
+            <hr>
+            <p style="background-color: lightgray;">
+                My favorite place is the Canal Belt in Amsterdam. The picturesque canals are lined with charming historic houses and arched bridges.<br>
+                I love strolling along the water, watching boats glide by and soaking in the vibrant city atmosphere.<br>
+                The unique blend of history, culture, and scenic beauty makes every visit unforgettable.
+            </p>
+            <h3 style="font-size: 20px;">Key Features</h3>
+            <ul class="feature-list" style="list-style: disc inside;">
+                <li>Charming canal-side houses</li>
+                <li>Historic arched bridges</li>
+                <li>Picturesque boat rides</li>
+                <li>Cafés and vibrant street life</li>
+            </ul>
+            <h4>Why I Love It</h4>
+            <p style="background-color: #f9f9f9; border-left: 5px solid #e63946;">
+                The Canal Belt inspires me with its timeless beauty and lively spirit. I feel a deep sense of wonder every time I walk along the canals.<br>
+                It's a place where I can relax, explore, and feel connected to the heart of Amsterdam.
+            </p>
+        </div>
+    </body>
+</html>
